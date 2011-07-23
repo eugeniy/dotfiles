@@ -46,3 +46,6 @@ colorscheme railscasts
 " Enable the spell checker by default
 " set spell
 
+" Load plugin submodules
+call pathogen#runtime_append_all_bundles()
+
