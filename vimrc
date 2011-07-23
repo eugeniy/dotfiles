@@ -7,6 +7,10 @@ set ruler               " show the cursor position all the time
 set showcmd             " display incomplete commands
 set incsearch           " do incremental searching
 
+" Load plugin submodules
+filetype off
+call pathogen#runtime_append_all_bundles()
+
 " Switch wrap off for everything
 " set nowrap
 
@@ -37,7 +41,7 @@ set smartcase
 set number
 
 " Detect the file type, useful for autocmd
-filetype on
+filetype plugin indent on
 
 " Allow to use 256 colors 
 set t_Co=256
@@ -45,7 +49,4 @@ colorscheme railscasts
 
 " Enable the spell checker by default
 " set spell
-
-" Load plugin submodules
-call pathogen#runtime_append_all_bundles()
 
