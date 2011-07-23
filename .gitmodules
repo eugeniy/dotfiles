@@ -1,5 +1,5 @@
-[submodule "bundle/jade"]
-	path = bundle/jade
+[submodule "bundle/jade.vim"]
+	path = bundle/jade.vim
 	url = https://github.com/vim-scripts/jade.vim.git
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
@@ -16,3 +16,6 @@
 [submodule "bundle/csapprox"]
 	path = bundle/csapprox
 	url = https://github.com/godlygeek/csapprox.git
+[submodule "bundle/python.vim"]
+	path = bundle/python.vim
+	url = https://github.com/vim-scripts/python.vim--Vasiliev.git
