@@ -11,6 +11,12 @@ set incsearch           " do incremental searching
 filetype off
 call pathogen#runtime_append_all_bundles()
 
+" Detect the file type, useful for autocmd
+filetype plugin indent on
+
+" Enable jQuery syntax
+au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
+
 " Switch wrap off for everything
 " set nowrap
 
@@ -40,13 +46,16 @@ set smartcase
 " Numbers
 set number
 
-" Detect the file type, useful for autocmd
-filetype plugin indent on
-
 " Allow to use 256 colors 
 set t_Co=256
 colorscheme railscasts
 
 " Enable the spell checker by default
 " set spell
+
+" The default make program
+set makeprg=node\ %
+
+" Save automatically before :make
+set autowrite
 
