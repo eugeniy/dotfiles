@@ -14,9 +14,10 @@ call pathogen#runtime_append_all_bundles()
 " Detect the file type, useful for autocmd
 filetype plugin indent on
 
-" Enable jQuery and lesscss syntax
+" Enable jQuery, lesscss and json syntax
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 au BufRead,BufNewFile *.less set filetype=less
+au BufRead,BufNewFile *.json set ft=javascript 
 
 " Switch wrap off for everything
 " set nowrap
