@@ -64,3 +64,5 @@ set makeprg=node\ %
 " Save automatically before :make
 set autowrite
 
+" Display the NERD tree on Ctrl+D
+nmap <silent> <C-D> :NERDTreeToggle<CR>
