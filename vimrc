@@ -19,6 +19,9 @@ au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 au BufRead,BufNewFile *.less set filetype=less
 au BufRead,BufNewFile *.json set ft=javascript 
 
+" Autocompile CoffeeScript on write
+autocmd BufWritePost *.coffee silent CoffeeMake!
+
 " Switch wrap off for everything
 " set nowrap
 
