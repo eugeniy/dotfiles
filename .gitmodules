@@ -37,3 +37,6 @@
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
 	url = git://github.com/mileszs/ack.vim.git
+[submodule "bundle/vim-colors"]
+	path = bundle/vim-colors
+	url = git://github.com/mgutz/vim-colors.git
