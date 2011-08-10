@@ -34,3 +34,6 @@
 [submodule "bundle/web-indent"]
 	path = bundle/web-indent
 	url = git://github.com/vim-scripts/JavaScript-Indent.git
+[submodule "bundle/javascript-syntax"]
+	path = bundle/javascript-syntax
+	url = git://github.com/vim-scripts/JavaScript-syntax.git
