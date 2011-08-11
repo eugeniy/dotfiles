@@ -20,7 +20,7 @@ au BufRead,BufNewFile *.less set filetype=less
 au BufRead,BufNewFile *.json set ft=javascript 
 
 " Autocompile CoffeeScript on write
-autocmd BufWritePost *.coffee silent CoffeeMake!
+" autocmd BufWritePost *.coffee silent CoffeeMake!
 
 " Switch wrap off for everything
 " set nowrap
@@ -63,6 +63,9 @@ set makeprg=node\ %
 
 " Save automatically before :make
 set autowrite
+
+" Open a file with Ctrl+T
+nmap <silent> <C-T> :CommandT<CR>
 
 " Display the NERD tree on Ctrl+D
 nmap <silent> <C-D> :NERDTreeToggle<CR>
