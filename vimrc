@@ -7,6 +7,8 @@ set ruler               " show the cursor position all the time
 set showcmd             " display incomplete commands
 set incsearch           " do incremental searching
 
+set autochdir
+
 " Load plugin submodules
 filetype off
 call pathogen#runtime_append_all_bundles()
@@ -39,10 +41,10 @@ set expandtab
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
-if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
-  syntax on
-  set hlsearch
-endif
+" if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
+syntax on
+set hlsearch
+" endif
 
 " case only matters with mixed case expressions
 set ignorecase
@@ -51,9 +53,17 @@ set smartcase
 " Numbers
 set number
 
+" Enable the mouse
+set mouse=a
+
 " Allow to use 256 colors 
 set t_Co=256
-colorscheme railscasts
+set background=dark
+" let g:solarized_termtrans=1
+" let g:solarized_visibility = "low"
+" let g:solarized_termcolors=256
+
+colorscheme solarized
 
 " Enable the spell checker by default
 " set spell
