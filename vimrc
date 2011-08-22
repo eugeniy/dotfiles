@@ -9,6 +9,7 @@ set incsearch           " do incremental searching
 
 set autochdir
 
+
 " Load plugin submodules
 filetype off
 call pathogen#runtime_append_all_bundles()
@@ -39,12 +40,14 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-" if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
+" Fix the backspace
+set backspace=2
+
+" Switch syntax highlighting on
 syntax on
+
+" Highlighting the last used search pattern
 set hlsearch
-" endif
 
 " case only matters with mixed case expressions
 set ignorecase
