@@ -20,5 +20,5 @@ set transp=2
 " set guifont=Consolas:h13
 " set guifont=Inconsolata:h14
 " set guifont=Bitstream\ Vera\ Sans\ Mono:h12
-set guifont=Menlo:h12
+set guifont=Menlo:h14
 " set guifont=Droid\ Sans\ Mono\ 10
