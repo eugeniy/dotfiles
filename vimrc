@@ -10,6 +10,11 @@ set incsearch           " do incremental searching
 set autochdir
 set cursorline
 
+
+" Directories for swp files
+set backupdir=~/.vim/backup
+set directory=~/.vim/backup
+
 " Load plugin submodules
 filetype off
 call pathogen#runtime_append_all_bundles()
@@ -82,6 +87,8 @@ set autowrite
 
 " Open a file with Ctrl+T
 nmap <silent> <C-T> :CommandT<CR>
+
+let g:CommandTMaxHeight=20
 
 " Display the NERD tree on Ctrl+D
 nmap <silent> <C-D> :NERDTreeToggle<CR>
