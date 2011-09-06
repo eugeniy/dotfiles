@@ -8,7 +8,7 @@ set showcmd             " display incomplete commands
 set incsearch           " do incremental searching
 
 set autochdir
-
+set cursorline
 
 " Load plugin submodules
 filetype off
@@ -24,6 +24,9 @@ au BufRead,BufNewFile *.json set ft=javascript
 
 " Autocompile CoffeeScript on write
 " autocmd BufWritePost *.coffee silent CoffeeMake!
+
+" Share a system clipboard
+set clipboard=unnamed
 
 " Switch wrap off for everything
 " set nowrap
@@ -82,6 +85,11 @@ nmap <silent> <C-T> :CommandT<CR>
 
 " Display the NERD tree on Ctrl+D
 nmap <silent> <C-D> :NERDTreeToggle<CR>
+
+" Single click open directories, double for files
+let NERDTreeMouseMode=2
+" Use arrows instead on bars and +
+let NERDTreeDirArrows=1
 
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 
