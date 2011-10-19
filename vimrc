@@ -96,7 +96,7 @@ nmap <silent> <C-D> :NERDTreeToggle<CR>
 " Single click open directories, double for files
 let NERDTreeMouseMode=2
 " Use arrows instead on bars and +
-let NERDTreeDirArrows=1
+" let NERDTreeDirArrows=1
 
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 
