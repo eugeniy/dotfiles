@@ -12,8 +12,8 @@ set cursorline
 
 
 " Directories for swp files
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
+" set backupdir=~/.vim/backup
+" set directory=~/.vim/backup
 
 " Load plugin submodules
 filetype off
@@ -65,7 +65,7 @@ set smartcase
 set number
 
 " Enable the mouse
-set mouse=a
+" set mouse=a
 
 " Allow to use 256 colors 
 set t_Co=256
