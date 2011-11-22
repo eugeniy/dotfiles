@@ -51,6 +51,10 @@ set expandtab
 " Display a line at 80 characters, needs vim 7.3
 set colorcolumn=80
 
+" Indent-based folding, use za
+set foldmethod=indent
+set foldlevel=99
+
 " Fix the backspace
 set backspace=2
 
