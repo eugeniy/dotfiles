@@ -48,6 +48,9 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
+" Display a line at 80 characters, needs vim 7.3
+set colorcolumn=80
+
 " Fix the backspace
 set backspace=2
 
