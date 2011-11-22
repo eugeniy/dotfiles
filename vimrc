@@ -42,10 +42,10 @@ set linebreak
 
 set autoindent          " always set auto indenting on
 
-" Soft tabs, 2 spaces
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+" Soft tabs, 4 spaces
+set tabstop=8
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 
 " Fix the backspace
@@ -56,6 +56,8 @@ syntax on
 
 " Highlighting the last used search pattern
 set hlsearch
+" Unset highlighting with Enter
+nnoremap <CR> :noh<CR><CR>
 
 " case only matters with mixed case expressions
 set ignorecase
@@ -80,15 +82,14 @@ colorscheme solarized
 " set spell
 
 " The default make program
-set makeprg=node\ %
+" set makeprg=node\ %
 
 " Save automatically before :make
 set autowrite
 
 " Open a file with Ctrl+T
-nmap <silent> <C-T> :CommandT<CR>
-
-let g:CommandTMaxHeight=20
+" nmap <silent> <C-T> :CommandT<CR>
+" let g:CommandTMaxHeight=20
 
 " Display the NERD tree on Ctrl+D
 nmap <silent> <C-D> :NERDTreeToggle<CR>
@@ -96,7 +97,7 @@ nmap <silent> <C-D> :NERDTreeToggle<CR>
 " Single click open directories, double for files
 let NERDTreeMouseMode=2
 " Use arrows instead on bars and +
-" let NERDTreeDirArrows=1
+let NERDTreeDirArrows=1
 
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 
