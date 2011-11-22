@@ -7,9 +7,10 @@ set ruler               " show the cursor position all the time
 set showcmd             " display incomplete commands
 set incsearch           " do incremental searching
 
-set autochdir
+" set autochdir
 set cursorline
 
+let mapleader = ","
 
 " Directories for swp files
 " set backupdir=~/.vim/backup
@@ -95,11 +96,13 @@ colorscheme solarized
 set autowrite
 
 " Open a file with Ctrl+T
-" nmap <silent> <C-T> :CommandT<CR>
-" let g:CommandTMaxHeight=20
+nmap <silent> <leader>t :CommandT<CR>
+let g:CommandTMaxHeight=20
+
+nmap <leader>a <Esc>:Ack! 
 
 " Display the NERD tree on Ctrl+D
-nmap <silent> <C-D> :NERDTreeToggle<CR>
+nmap <silent> <leader>n :NERDTreeToggle<CR>
 
 " Single click open directories, double for files
 let NERDTreeMouseMode=2
