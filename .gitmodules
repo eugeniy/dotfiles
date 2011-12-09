@@ -1,51 +1,51 @@
-[submodule "bundle/jade.vim"]
-	path = bundle/jade.vim
+[submodule "vim/bundle/jade.vim"]
+	path = vim/bundle/jade.vim
 	url = git://github.com/vim-scripts/jade.vim.git
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
+[submodule "vim/bundle/vim-markdown"]
+	path = vim/bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git
-[submodule "bundle/vim-haml"]
-	path = bundle/vim-haml
+[submodule "vim/bundle/vim-haml"]
+	path = vim/bundle/vim-haml
 	url = git://github.com/tpope/vim-haml.git
-[submodule "bundle/vim-rails"]
-	path = bundle/vim-rails
+[submodule "vim/bundle/vim-rails"]
+	path = vim/bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
-[submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
+[submodule "vim/bundle/vim-fugitive"]
+	path = vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "bundle/python.vim"]
-	path = bundle/python.vim
+[submodule "vim/bundle/python.vim"]
+	path = vim/bundle/python.vim
 	url = git://github.com/vim-scripts/python.vim--Vasiliev.git
-[submodule "bundle/jquery.vim"]
-	path = bundle/jquery.vim
+[submodule "vim/bundle/jquery.vim"]
+	path = vim/bundle/jquery.vim
 	url = git://github.com/nono/jquery.vim.git
-[submodule "bundle/vim-coffee-script"]
-	path = bundle/vim-coffee-script
+[submodule "vim/bundle/vim-coffee-script"]
+	path = vim/bundle/vim-coffee-script
 	url = git://github.com/kchmck/vim-coffee-script.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
-[submodule "bundle/web-indent"]
-	path = bundle/web-indent
+[submodule "vim/bundle/web-indent"]
+	path = vim/bundle/web-indent
 	url = git://github.com/vim-scripts/JavaScript-Indent.git
-[submodule "bundle/javascript-syntax"]
-	path = bundle/javascript-syntax
+[submodule "vim/bundle/javascript-syntax"]
+	path = vim/bundle/javascript-syntax
 	url = git://github.com/vim-scripts/JavaScript-syntax.git
-[submodule "bundle/ack.vim"]
-	path = bundle/ack.vim
+[submodule "vim/bundle/ack.vim"]
+	path = vim/bundle/ack.vim
 	url = git://github.com/mileszs/ack.vim.git
-[submodule "bundle/vim-colors"]
-	path = bundle/vim-colors
+[submodule "vim/bundle/vim-colors"]
+	path = vim/bundle/vim-colors
 	url = git://github.com/mgutz/vim-colors.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
+[submodule "vim/bundle/command-t"]
+	path = vim/bundle/command-t
 	url = git://github.com/wincent/Command-T.git
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
+[submodule "vim/bundle/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/supertab"]
-	path = bundle/supertab
+[submodule "vim/bundle/supertab"]
+	path = vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
-[submodule "bundle/vst"]
-	path = bundle/vst
+[submodule "vim/bundle/vst"]
+	path = vim/bundle/vst
 	url = git://github.com/vim-scripts/VST.git
