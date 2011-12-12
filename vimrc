@@ -1,4 +1,5 @@
 set nocompatible
+set encoding=utf-8
 set nomodeline
 set nobackup
 set nowritebackup
