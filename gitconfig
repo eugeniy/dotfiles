@@ -1,0 +1,11 @@
+[user]
+	name = Eugeniy Kalinin
+	email = burump@gmail.com
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[core]
+	excludesfile = ~/.gitignore
+[color]
+	ui = true
