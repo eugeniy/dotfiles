@@ -21,6 +21,8 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 
 " Detect the file type, useful for autocmd
+filetype on            " enables filetype detection
+filetype plugin on     " enables filetype specific plugins
 filetype plugin indent on
 
 " Enable jQuery, lesscss and json syntax

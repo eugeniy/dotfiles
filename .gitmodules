@@ -49,3 +49,6 @@
 [submodule "vim/bundle/vst"]
 	path = vim/bundle/vst
 	url = git://github.com/vim-scripts/VST.git
+[submodule "vim/bundle/pyflakes-vim"]
+	path = vim/bundle/pyflakes-vim
+	url = git://github.com/kevinw/pyflakes-vim.git
