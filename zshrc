@@ -12,3 +12,18 @@ plugins=(git yum pip)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+alias gs="gst -sb"
+
+if [ -z $TMUX ]; then
+  tmux attach-session -t raven
+fi
+
+export WORKON_HOME=~/.virtualenvs
+if [ -f /usr/bin/virtualenvwrapper.sh ]; then
+  source /usr/bin/virtualenvwrapper.sh
+fi
+
+if [ -f ~/.dotfiles/DIR_COLORS.xterm ]; then
+    eval `dircolors -b ~/.dotfiles/DIR_COLORS.xterm`
+fi

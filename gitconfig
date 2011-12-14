@@ -7,5 +7,6 @@
 	prompt = false
 [core]
 	excludesfile = ~/.gitignore
+	editor = vim
 [color]
 	ui = true
