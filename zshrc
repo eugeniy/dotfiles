@@ -16,7 +16,7 @@ source $ZSH/oh-my-zsh.sh
 alias gs="gst -sb"
 
 if [ -z $TMUX ]; then
-  tmux attach-session -t raven
+  tmux -u -2 attach-session -t raven
 fi
 
 export WORKON_HOME=~/.virtualenvs
