@@ -14,6 +14,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 alias gs="gst -sb"
+alias ll="ls -alh"
 
 if [ -z $TMUX ]; then
   tmux -u -2 attach-session -t raven
