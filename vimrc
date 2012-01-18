@@ -55,6 +55,15 @@ set expandtab
 " Display a line at 80 characters, needs vim 7.3
 set colorcolumn=80
 
+" Highlight trailing white space in ugly red, should come before colorscheme
+autocmd ColorScheme * highlight TrailingSpaces ctermbg=darkred guibg=darkred
+highlight TrailingSpaces ctermbg=darkred guibg=darkred
+match TrailingSpaces /\s\+$/
+
+" Show tabs
+set list!
+set listchars=tab:→\ 
+
 " Indent-based folding, use za
 set foldmethod=indent
 set foldlevel=99
@@ -84,7 +93,7 @@ set mouse=a
 set t_Co=256
 set background=dark
 " let g:solarized_termtrans=1
-" let g:solarized_visibility = "low"
+" let g:solarized_visibility="low"
 " let g:solarized_termcolors=256
 
 colorscheme solarized
