@@ -26,6 +26,14 @@ if [ -f /usr/bin/virtualenvwrapper.sh ]; then
   source /usr/bin/virtualenvwrapper.sh
 fi
 
-if [ -f ~/.dotfiles/DIR_COLORS.xterm ]; then
-    eval `dircolors -b ~/.dotfiles/DIR_COLORS.xterm`
+if [ -x /usr/bin/dircolors ]; then
+    if [ -f ~/.dotfiles/DIR_COLORS.xterm ]; then
+        eval `dircolors -b ~/.dotfiles/DIR_COLORS.xterm`
+    fi
 fi
+
+# macports
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+# rvm
+[[ -s "/Users/eugeniy/.rvm/scripts/rvm" ]] && source "/Users/eugeniy/.rvm/scripts/rvm"
