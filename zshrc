@@ -7,7 +7,7 @@ DISABLE_AUTO_UPDATE="true"
 # DISABLE_AUTO_TITLE="true"
 # COMPLETION_WAITING_DOTS="true"
 
-plugins=(git yum pip)
+plugins=(git yum pip rails3)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -31,6 +31,10 @@ if [ -x /usr/bin/dircolors ]; then
         eval `dircolors -b ~/.dotfiles/DIR_COLORS.xterm`
     fi
 fi
+
+# rbenv
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
 
 # macports
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH

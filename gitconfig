@@ -2,7 +2,7 @@
 	name = Eugeniy Kalinin
 	email = burump@gmail.com
 [diff]
-	tool = vimdiff
+	tool = meld
 [difftool]
 	prompt = false
 [core]

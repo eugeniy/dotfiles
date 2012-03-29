@@ -47,10 +47,13 @@ set linebreak
 set autoindent          " always set auto indenting on
 
 " Soft tabs, 4 spaces
-set tabstop=8
+set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+
+" Use 2 spaces in Ruby instead of 4
+autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2 tabstop=2
 
 " Display a line at 80 characters, needs vim 7.3
 set colorcolumn=80
