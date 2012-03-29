@@ -1,6 +1,3 @@
-[submodule "vim/bundle/jade.vim"]
-	path = vim/bundle/jade.vim
-	url = git://github.com/vim-scripts/jade.vim.git
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git
@@ -34,9 +31,6 @@
 [submodule "vim/bundle/ack.vim"]
 	path = vim/bundle/ack.vim
 	url = git://github.com/mileszs/ack.vim.git
-[submodule "vim/bundle/vim-colors"]
-	path = vim/bundle/vim-colors
-	url = git://github.com/mgutz/vim-colors.git
 [submodule "vim/bundle/command-t"]
 	path = vim/bundle/command-t
 	url = git://github.com/wincent/Command-T.git

@@ -120,6 +120,8 @@ nmap <silent> <leader>n :NERDTreeToggle<CR>
 let NERDTreeMouseMode=2
 " Use arrows instead on bars and +
 let NERDTreeDirArrows=1
+" Hide pyc files
+let NERDTreeIgnore = ['\.pyc$']
 
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 

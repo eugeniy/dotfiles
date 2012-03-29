@@ -22,10 +22,14 @@ if [ -z $TMUX ]; then
 fi
 
 export WORKON_HOME=~/.virtualenvs
-if [ -f /usr/bin/virtualenvwrapper.sh ]; then
-  source /usr/bin/virtualenvwrapper.sh
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+  source /usr/local/bin/virtualenvwrapper.sh
 fi
 
 if [ -f ~/.dotfiles/DIR_COLORS.xterm ]; then
     eval `dircolors -b ~/.dotfiles/DIR_COLORS.xterm`
+fi
+
+if [ -f private/.zshrc ]; then
+    . private/.zshrc
 fi
