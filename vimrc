@@ -29,7 +29,7 @@ filetype plugin indent on
 " Enable jQuery, lesscss and json syntax
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 au BufRead,BufNewFile *.less set filetype=less
-au BufRead,BufNewFile *.json set ft=javascript 
+au BufRead,BufNewFile *.json set ft=javascript
 
 " Autocompile CoffeeScript on write
 " autocmd BufWritePost *.coffee silent CoffeeMake!
@@ -92,7 +92,7 @@ set number
 " Enable the mouse
 set mouse=a
 
-" Allow to use 256 colors 
+" Allow to use 256 colors
 set t_Co=256
 set background=dark
 " let g:solarized_termtrans=1
@@ -109,6 +109,12 @@ colorscheme solarized
 
 " Save automatically before :make
 set autowrite
+
+" Automatically decide which compltetion to use
+let g:SuperTabDefaultCompletionType="context"
+" Close the omnicompletion tip window on selection
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 " Open a file with Ctrl+T
 nmap <silent> <leader>t :CommandT<CR>
