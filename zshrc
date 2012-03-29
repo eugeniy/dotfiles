@@ -26,8 +26,10 @@ if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
   source /usr/local/bin/virtualenvwrapper.sh
 fi
 
-if [ -f ~/.dotfiles/DIR_COLORS.xterm ]; then
-    eval `dircolors -b ~/.dotfiles/DIR_COLORS.xterm`
+if [ -x /usr/bin/dircolors ]; then
+    if [ -f ~/.dotfiles/DIR_COLORS.xterm ]; then
+        eval `dircolors -b ~/.dotfiles/DIR_COLORS.xterm`
+    fi
 fi
 
 if [ -f private/.zshrc ]; then
