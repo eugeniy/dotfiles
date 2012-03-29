@@ -22,8 +22,8 @@ if [ -z $TMUX ]; then
 fi
 
 export WORKON_HOME=~/.virtualenvs
-if [ -f /usr/bin/virtualenvwrapper.sh ]; then
-  source /usr/bin/virtualenvwrapper.sh
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+  source /usr/local/bin/virtualenvwrapper.sh
 fi
 
 if [ -x /usr/bin/dircolors ]; then
@@ -35,3 +35,7 @@ fi
 # rbenv
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
+
+if [ -f private/.zshrc ]; then
+    . private/.zshrc
+fi
