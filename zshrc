@@ -35,9 +35,3 @@ fi
 # rbenv
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
-
-# macports
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
-# rvm
-[[ -s "/Users/eugeniy/.rvm/scripts/rvm" ]] && source "/Users/eugeniy/.rvm/scripts/rvm"
