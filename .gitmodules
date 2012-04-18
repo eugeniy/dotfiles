@@ -40,9 +40,6 @@
 [submodule "vim/bundle/supertab"]
 	path = vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
-[submodule "vim/bundle/vst"]
-	path = vim/bundle/vst
-	url = git://github.com/vim-scripts/VST.git
 [submodule "vim/bundle/pyflakes-vim"]
 	path = vim/bundle/pyflakes-vim
 	url = git://github.com/kevinw/pyflakes-vim.git
