@@ -2,9 +2,11 @@
 	name = Eugeniy Kalinin
 	email = burump@gmail.com
 [diff]
-	tool = meld
+	tool = p4merge
 [difftool]
 	prompt = false
+[merge]
+	tool = p4merge
 [core]
 	excludesfile = ~/.gitignore
 	editor = vim

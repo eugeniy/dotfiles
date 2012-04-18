@@ -35,7 +35,7 @@ au BufRead,BufNewFile *.json set ft=javascript
 " autocmd BufWritePost *.coffee silent CoffeeMake!
 
 " Share a system clipboard
-set clipboard=unnamed
+" set clipboard=unnamed
 
 " Switch wrap off for everything
 " set nowrap
@@ -145,3 +145,9 @@ function s:CloseIfOnlyNerdTreeLeft()
     endif
   endif
 endfunction
+
+
+" Perforce stuff
+nnoremap <leader>p4a :!p4 add %<CR>
+nnoremap <leader>p4e :!p4 edit %<CR>
+nnoremap <leader>p4r :!p4 revert %

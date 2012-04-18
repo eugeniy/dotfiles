@@ -36,6 +36,6 @@ fi
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 
-if [ -f private/.zshrc ]; then
-    . private/.zshrc
+if [ -f ~/.dotfiles/private/zshrc ]; then
+    . ~/.dotfiles/private/zshrc
 fi
