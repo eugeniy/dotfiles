@@ -28,7 +28,7 @@ fi
 
 if [ -x /usr/bin/dircolors ]; then
     if [ -f ~/.dotfiles/DIR_COLORS.xterm ]; then
-        eval `dircolors -b ~/.dotfiles/DIR_COLORS.xterm`
+        eval `dircolors -b ~/.dotfiles/dircolors.ansi-dark`
     fi
 fi
 

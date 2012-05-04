@@ -9,7 +9,8 @@ set showcmd             " display incomplete commands
 set incsearch           " do incremental searching
 
 " set autochdir
-set cursorline
+" Cursor line is very SLOW
+" set cursorline
 
 let mapleader = ","
 
@@ -75,6 +76,7 @@ set foldlevel=99
 set backspace=2
 
 " Switch syntax highlighting on
+syntax sync minlines=200  " otherwise things get really slow with very large files
 syntax on
 
 " Highlighting the last used search pattern
