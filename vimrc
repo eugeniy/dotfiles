@@ -91,6 +91,9 @@ set smartcase
 " Numbers
 set number
 
+" Indicate we have a fast connection
+set ttyfast
+
 " Enable the mouse
 set mouse=a
 
