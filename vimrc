@@ -110,17 +110,13 @@ colorscheme solarized
 " set makeprg=node\ %
 
 " Save automatically before :make
-set autowrite
+" set autowrite
 
 " Automatically decide which compltetion to use
 let g:SuperTabDefaultCompletionType="context"
 " Close the omnicompletion tip window on selection
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-
-" Open a file with Ctrl+T
-nmap <silent> <leader>t :CommandT<CR>
-let g:CommandTMaxHeight=20
 
 nmap <leader>a <Esc>:Ack! 
 
