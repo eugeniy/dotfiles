@@ -93,6 +93,8 @@ set number
 
 " Indicate we have a fast connection
 set ttyfast
+" Don't redraw if we don't need to
+set lazyredraw
 
 " Enable the mouse
 set mouse=a
