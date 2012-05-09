@@ -125,6 +125,10 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 nmap <leader>a <Esc>:Ack! 
 
+" Remap CtrlP
+let g:ctrlp_map = '<leader>t'
+set wildignore+=*.pyc
+
 " Display the NERD tree on Ctrl+D
 nmap <silent> <leader>n :NERDTreeToggle<CR>
 
