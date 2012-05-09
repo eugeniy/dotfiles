@@ -27,7 +27,7 @@ if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
 fi
 
 if [ -x /usr/bin/dircolors ]; then
-    if [ -f ~/.dotfiles/DIR_COLORS.xterm ]; then
+    if [ -f ~/.dotfiles/dircolors.ansi-dark ]; then
         eval `dircolors -b ~/.dotfiles/dircolors.ansi-dark`
     fi
 fi
