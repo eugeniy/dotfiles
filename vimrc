@@ -127,7 +127,10 @@ nmap <leader>a <Esc>:Ack!
 
 " Remap CtrlP
 let g:ctrlp_map = '<leader>t'
-set wildignore+=*.pyc
+set wildignore+=*.pyc,*.swo
+" Use the perforce config as a main root for the search
+let g:ctrlp_root_markers = ['.p4config']
+let g:ctrlp_clear_cache_on_exit = 0
 
 " Display the NERD tree on Ctrl+D
 nmap <silent> <leader>n :NERDTreeToggle<CR>
