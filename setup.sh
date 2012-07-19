@@ -7,4 +7,7 @@ ln -s .dotfiles/tmux.conf ../.tmux.conf
 ln -s .dotfiles/zshrc ../.zshrc
 git submodule init
 git submodule update
+cd ~/.dotfiles/vim/bundle/pyflakes-vim
+git submodule init
+git submodule update
 cd ~
