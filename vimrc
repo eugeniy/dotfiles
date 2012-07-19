@@ -9,8 +9,7 @@ set showcmd             " display incomplete commands
 set incsearch           " do incremental searching
 
 " set autochdir
-" Cursor line is very SLOW
-" set cursorline
+set cursorline
 
 let mapleader = ","
 
