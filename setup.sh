@@ -11,3 +11,5 @@ cd ~/.dotfiles/vim/bundle/pyflakes-vim
 git submodule init
 git submodule update
 cd ~
+git clone git@github.com:eugeniy/oh-my-zsh.git ~/.oh-my-zsh
+echo 'Set zsh as your default shell: chsh -s /bin/zsh'

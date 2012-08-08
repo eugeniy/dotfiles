@@ -17,8 +17,10 @@ alias gs="gst -sb"
 alias ll="ls -alh"
 
 export TERM=xterm-256color
-if [ -z $TMUX ]; then
-  tmux -u -2 attach-session -t ''
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+    if [ -z $TMUX ]; then
+      tmux -u -2 attach-session -t ''
+    fi
 fi
 
 export WORKON_HOME=~/.virtualenvs
@@ -31,6 +33,9 @@ if [ -x /usr/bin/dircolors ]; then
         eval `dircolors -b ~/.dotfiles/dircolors.ansi-dark`
     fi
 fi
+
+# postgres.app
+PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 
 # rbenv
 export PATH=$HOME/.rbenv/bin:$PATH
