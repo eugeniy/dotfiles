@@ -18,7 +18,7 @@ alias ll="ls -alh"
 
 export TERM=xterm-256color
 if [ -z $TMUX ]; then
-  tmux -u -2 attach-session -t raven
+  tmux -u -2 attach-session -t ''
 fi
 
 export WORKON_HOME=~/.virtualenvs
