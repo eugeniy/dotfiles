@@ -141,3 +141,9 @@ let g:ctrlp_clear_cache_on_exit = 0
 nnoremap <leader>p4a :!p4 add %<CR>
 nnoremap <leader>p4e :!p4 edit %<CR>
 nnoremap <leader>p4r :!p4 revert %
+
+" Disable arrow keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
