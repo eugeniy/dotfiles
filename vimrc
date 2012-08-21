@@ -125,37 +125,17 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 nmap <leader>a <Esc>:Ack! 
 
+let g:netrw_list_hide = '.*\.pyc$'
+" Horizontal split for the preview
+let g:netrw_preview = 1
+let g:netrw_winsize = 20
+
 " Remap CtrlP
 let g:ctrlp_map = '<leader>t'
 set wildignore+=*.pyc,*.swo
 " Use the perforce config as a main root for the search
 let g:ctrlp_root_markers = ['.p4config']
 let g:ctrlp_clear_cache_on_exit = 0
-
-" Display the NERD tree on Ctrl+D
-nmap <silent> <leader>n :NERDTreeToggle<CR>
-
-" Single click open directories, double for files
-let NERDTreeMouseMode=2
-" Use arrows instead on bars and +
-let NERDTreeDirArrows=1
-" Hide pyc files
-let NERDTreeIgnore = ['\.pyc$']
-
-autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
-
-" Close all open buffers on entering a window if the only
-" buffer that's left is the NERDTree buffer
-function s:CloseIfOnlyNerdTreeLeft()
-  if exists("t:NERDTreeBufName")
-    if bufwinnr(t:NERDTreeBufName) != -1
-      if winnr("$") == 1
-        q
-      endif
-    endif
-  endif
-endfunction
-
 
 " Perforce stuff
 nnoremap <leader>p4a :!p4 add %<CR>
