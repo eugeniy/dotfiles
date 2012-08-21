@@ -100,12 +100,13 @@ set mouse=a
 
 " Allow to use 256 colors
 set t_Co=256
-set background=dark
+"set background=dark
 " let g:solarized_termtrans=1
 " let g:solarized_visibility="low"
 " let g:solarized_termcolors=256
 
-colorscheme solarized
+"colorscheme solarized
+colorscheme molokai
 
 " Enable the spell checker by default
 " set spell
