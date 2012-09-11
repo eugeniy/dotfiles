@@ -15,6 +15,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias gs="gst -sb"
 alias ll="ls -alh"
+alias lh='ls --hide="*.pyc"'
 
 export TERM=xterm-256color
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
