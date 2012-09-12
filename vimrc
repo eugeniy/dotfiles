@@ -55,8 +55,8 @@ set expandtab
 " Use 2 spaces in Ruby instead of 4
 autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2 tabstop=2
 
-" Display a line at 80 characters, needs vim 7.3
-set colorcolumn=80
+" Display a line at 79 characters, needs vim 7.3
+set colorcolumn=79
 
 " Highlight trailing white space in ugly red, should come before colorscheme
 autocmd ColorScheme * highlight TrailingSpaces ctermbg=darkred guibg=darkred
@@ -106,10 +106,12 @@ set background=dark
 " let g:solarized_termcolors=256
 
 colorscheme solarized
-"colorscheme molokai
+" colorscheme molokai
 
 " Enable the spell checker by default
+" Highlight bad spelling and syntax instead of underlining
 " set spell
+highlight SpellBad ctermbg=darkred ctermfg=black cterm=none
 
 " The default make program
 " set makeprg=node\ %
