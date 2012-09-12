@@ -156,6 +156,9 @@ function s:CloseIfOnlyNerdTreeLeft()
   endif
 endfunction
 
+" Syntactic
+let g:syntastic_check_on_open=1
+let g:syntastic_error_symbol="»"
 
 " Perforce stuff
 nnoremap <leader>p4a :!p4 add %<CR>
