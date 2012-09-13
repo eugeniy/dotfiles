@@ -17,14 +17,15 @@ let mapleader = ","
 " set backupdir=~/.vim/backup
 " set directory=~/.vim/backup
 
-" Load plugin submodules
+" Load plugins and their helptags
 filetype off
-call pathogen#runtime_append_all_bundles()
-
-" Detect the file type, useful for autocmd
-filetype on            " enables filetype detection
-filetype plugin on     " enables filetype specific plugins
+call pathogen#infect()
+call pathogen#helptags()
 filetype plugin indent on
+
+" Switch syntax highlighting on
+" syntax sync minlines=200  " otherwise things get really slow with very large files
+syntax on
 
 " Enable jQuery, lesscss and json syntax
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
@@ -36,9 +37,6 @@ au BufRead,BufNewFile *.json set ft=javascript
 
 " Share a system clipboard
 " set clipboard=unnamed
-
-" Switch wrap off for everything
-" set nowrap
 
 " Use soft line breaks
 set wrap
@@ -58,25 +56,17 @@ autocmd FileType ruby setlocal shiftwidth=2 softtabstop=2 tabstop=2
 " Display a line at 79 characters, needs vim 7.3
 set colorcolumn=79
 
-" Highlight trailing white space in ugly red, should come before colorscheme
-autocmd ColorScheme * highlight TrailingSpaces ctermbg=darkred guibg=darkred
-highlight TrailingSpaces ctermbg=darkred guibg=darkred
-match TrailingSpaces /\s\+$/
-
 " Show tabs
 set list!
 set listchars=tab:→\ 
 
-" Indent-based folding, use za
-set foldmethod=indent
+" Indent-based folding
+" set foldmethod=indent
 set foldlevel=99
+nnoremap <space> za
 
 " Fix the backspace
 set backspace=2
-
-" Switch syntax highlighting on
-syntax sync minlines=200  " otherwise things get really slow with very large files
-syntax on
 
 " Highlighting the last used search pattern
 set hlsearch
@@ -92,7 +82,7 @@ set number
 
 " Indicate we have a fast connection
 set ttyfast
-" Don't redraw if we don't need to
+" Don't redraw when running macros
 set lazyredraw
 
 " Enable the mouse
@@ -108,9 +98,7 @@ set background=dark
 colorscheme solarized
 " colorscheme molokai
 
-" Enable the spell checker by default
 " Highlight bad spelling and syntax instead of underlining
-" set spell
 highlight SpellBad ctermbg=darkred ctermfg=black cterm=none
 
 " The default make program
@@ -120,10 +108,10 @@ highlight SpellBad ctermbg=darkred ctermfg=black cterm=none
 " set autowrite
 
 " Automatically decide which compltetion to use
-let g:SuperTabDefaultCompletionType="context"
+" let g:SuperTabDefaultCompletionType="context"
 " Close the omnicompletion tip window on selection
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+" autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+" autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 nmap <leader>a <Esc>:Ack! 
 

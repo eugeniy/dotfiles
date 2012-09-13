@@ -17,6 +17,9 @@ alias gs="gst -sb"
 alias ll="ls -alh"
 alias lh='ls --hide="*.pyc"'
 
+# Disable Ctrl+S
+stty stop undef
+
 export TERM=xterm-256color
 if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
     if [ -z $TMUX ]; then
