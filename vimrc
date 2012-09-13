@@ -107,12 +107,6 @@ highlight SpellBad ctermbg=darkred ctermfg=black cterm=none
 " Save automatically before :make
 " set autowrite
 
-" Automatically decide which compltetion to use
-" let g:SuperTabDefaultCompletionType="context"
-" Close the omnicompletion tip window on selection
-" autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-" autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-
 nmap <leader>a <Esc>:Ack! 
 
 " Remap CtrlP
@@ -145,10 +139,6 @@ function s:CloseIfOnlyNerdTreeLeft()
     endif
   endif
 endfunction
-
-" Syntactic
-let g:syntastic_check_on_open=1
-let g:syntastic_error_symbol="»"
 
 " Perforce stuff
 nnoremap <leader>p4a :!p4 add %<CR>
