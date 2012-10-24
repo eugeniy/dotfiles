@@ -7,7 +7,7 @@ DISABLE_AUTO_UPDATE="true"
 # DISABLE_AUTO_TITLE="true"
 # COMPLETION_WAITING_DOTS="true"
 
-plugins=(vi-mode git pip rails3 python history-substring-search)
+plugins=(git pip rails3 python fabric history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
