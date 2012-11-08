@@ -17,6 +17,9 @@ alias gs="gst -sb"
 alias ll="ls -alh"
 alias lh='ls --hide="*.pyc"'
 
+# disable autocorrect for fabric...
+alias fab='nocorrect fab'
+
 # Disable Ctrl+S
 stty stop undef
 
