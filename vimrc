@@ -27,6 +27,11 @@ filetype plugin indent on
 " syntax sync minlines=200  " otherwise things get really slow with very large files
 syntax on
 
+" Disable syntastic for python, use python-mode instead
+let g:syntastic_disabled_filetypes = ['python']
+" Open an error window
+let g:syntastic_auto_loc_list=1
+
 " Enable jQuery, lesscss and json syntax
 au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 au BufRead,BufNewFile *.less set filetype=less
