@@ -4,6 +4,7 @@
     "undef":  true,
     "unused": true,
 
+    "camelcase": true,
     "curly": true,
     "eqeqeq": true,
     "indent": 4,
@@ -13,6 +14,8 @@
     "maxparams": 5,
     "maxdepth": 3,
     "maxlen": 80,
+
+    "white": false,
 
     // env
     "browser": true,
